@@ -13,7 +13,7 @@ html {
     --white: #ffff;
     --font_family: "Raleway", sans-serif;
     --padding_top_section: 5rem;
-    --heading_font: 2.5rem;
+    --heading_font: 3rem;
 
 }
 
@@ -28,11 +28,11 @@ body {
 
 .navbar_bg {
     background-color: var(--gray_color);
-    padding: 1.2rem 0px;
-    position: sticky;
+    padding: 1.2rem 0rem;
+    /* position: sticky;
     top: 0;
     z-index: 999;
-    width: 100%;
+    width: 100%; */
    
 }
 
@@ -115,18 +115,18 @@ body {
 .category-buttons {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .category-buttons button {
-    padding: 10px 15px;
+    padding: 1rem 1.5rem;
     border: none;
     background: #007bff;
     color: white;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
 
 .category-buttons button.active {
@@ -138,21 +138,21 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 1.5rem;
 }
 
 .mix {
-    width: 250px;
-    border-radius: 10px;
+    width: 25rem;
+    border-radius: 1rem;
     overflow: hidden;
     transition: 0.3s;
 }
 
 .mix img {
     width: 100%;
-    height: 180px;
+    height: 18rem;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 /* Contact */
@@ -161,48 +161,48 @@ body {
     background: white;
 }
 
+
+
 .contact-form h2 {
     text-align: center;
-    margin-bottom: 15px;
+    font-size: var(--heading_font);
+    margin-bottom: 1.5rem;
     color: #333;
 }
-.contact-form .col-md-6 iframe {
-    width: 100%;
-    height: 35rem;
-}
+
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
 .form-group label {
     display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
     color: #555;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 1rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
 }
 
 .form-group textarea {
     resize: none;
-    height: 100px;
+    height: 10rem;
 }
 
 .form-group button {
     width: 100%;
-    padding: 10px;
+    padding: 1rem;
     border: none;
-    background: #007bff;
+    background: var(--blue_color);
     color: white;
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
 }
 
 .form-group button:hover {
@@ -211,15 +211,191 @@ body {
 
 .error {
     color: red;
-    font-size: 12px;
-    margin-top: 5px;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
     display: none;
 }
 
 .success-message {
     text-align: center;
     color: green;
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 1.4rem;
+    margin-top: 1rem;
     display: none;
+}
+
+/* Contact Info */
+.contact-form .row {
+    display: flex;
+    align-items: stretch;
+}
+.contact-info {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0rem 0.4rem 1rem rgba(0, 0, 0, 0.1);
+    height: 35rem;
+}
+
+.contact-info h3 {
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    color: #333;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    border-radius: 0.6rem;
+}
+
+.info-box i {
+    font-size: 2rem;
+    color: var(--blue_color);
+}
+
+.info-box a {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #555;
+    text-decoration: none;
+}
+footer {
+  padding: var(--padding_top_section) 0rem 0rem 0rem;
+}
+footer .container-fluid {
+    background-color: var(--gray_color);
+    padding: var(--padding_top_section) 0rem;
+}
+
+footer .container-fluid .container .row .col-md-4 .logo img {
+    width: 20rem;
+}
+footer .container-fluid .container .row .col-md-4 .logo p {
+    color:var(--white);
+    margin-top: 10px
+}
+
+footer .container-fluid .container .row .col-md-4 .logo p a {
+    text-transform: uppercase;
+}
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #333;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    background: #007bff;
+}
+
+
+/* Testimonials */
+
+.testimonial-section {
+    position: relative;
+    background: url('../img/banner/03.png') no-repeat center center/cover;
+
+    text-align: center;
+    color: white;
+}
+.testimonial-section h1 {
+    color: var(--green_color);
+    position: relative;
+    z-index: 9;
+    padding-top: var(--padding_top_section);
+    /* padding: var(--padding_top_section) 0rem; */
+    font-size: var(--heading_font);
+    line-height: 1;
+}
+
+.testimonial-section h2 {
+    font-size: var(--heading_font);
+    color: var(--white);
+    position: relative;
+    z-index: 9;
+    padding-bottom: var(--padding_top_section) - 2rem;
+
+}
+.testimonial-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.testimonial-section .testimonial-content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.testimonial-section .testimonial-content p {
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.testimonial-section .testimonial-content h4 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: var(--blue_color);
+}
+
+/* ✅ Full-Width Owl Carousel */
+.testimonial-section .testimonial-content .owl-carousel {
+    width: 100%;
+}
+
+.testimonial-section .testimonial-content .owl-carousel .owl-stage-outer {
+    width: 100%;
+    overflow: hidden;
+}
+
+.testimonial-section .testimonial-content .owl-carousel .owl-stage {
+    display: flex;
+}
+
+.testimonial-section .testimonial-content .owl-carousel .owl-item {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-section .testimonial-content .owl-carousel .item {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ✅ Avatar Image Styling */
+.testimonial-section .testimonial-content .owl-carousel .item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin: auto;
+    margin-bottom: 2rem;
 }

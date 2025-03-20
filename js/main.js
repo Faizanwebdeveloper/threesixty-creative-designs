@@ -2,7 +2,7 @@ $(document).ready(function () {
     $("#clickMe").click(function () {
         alert("Button Clicked!");
     });
-    $(".owl-carousel").owlCarousel({
+    $("#client_owl").owlCarousel({
         loop: true,
         margin: 20,
         autoplay: true,
@@ -15,12 +15,23 @@ $(document).ready(function () {
             992: { items: 5 }
         }
     });
+
+    $("#testimonial-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        smartSpeed: 800,
+        items: 1 // Ensures only one item is shown at a time
+    });
     AOS.init();
     $(window).on("scroll", function () {
         var scrollPos = $(document).scrollTop();
 
         $(".section").each(function () {
-            var sectionTop = $(this).offset().top - 80; // Navbar height adjustment
+            var sectionTop = $(this).offset().top - 100;
             var sectionBottom = sectionTop + $(this).outerHeight();
 
             if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
@@ -30,8 +41,8 @@ $(document).ready(function () {
             }
         });
 
-        // Home Active Issue Fix
-        if (scrollPos < 50) {
+   
+        if (scrollPos < 20) {
             $(".navbar-nav .nav-link").removeClass("active");
             $('.navbar-nav .nav-link[href="#"], .navbar-nav .nav-link[href="index.html"]').addClass("active");
         }
