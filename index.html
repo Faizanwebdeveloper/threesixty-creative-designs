@@ -11,13 +11,14 @@
     <!-- Aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 </head>
 
 <body>
@@ -142,24 +143,472 @@
 
     <!-- About End -->
     <section id="services" class="section">
-        <div class="services padding_section" data-aos="fade-up" data-aos-anchor-placement="center-center">
-            <div class="container text-center">
+        <div class="services padding_section">
+            <div class="container text-center my-5">
                 <h2 class="green">Services</h2>
                 <h2>What We Do</h2>
 
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
+                <div class="row g-4 padding_section">
+
+                    <!-- Stand Designing & Fabrication -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="icon-services">
+                                <!-- <img src="img/man.png" alt=""> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 48.62 46.43">
+                                    <defs>
+                                        <linearGradient id="linear-gradient" x1="0.5" y1="23.21" x2="48.12" y2="23.21"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#fff"></stop>
+                                            <stop offset="1"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="linear-gradient-2" x1="29.69" y1="18.04" x2="44.8"
+                                            y2="18.04" xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-3" x1="29.77" y1="8.07" x2="44.78" y2="8.07"
+                                            xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-4" x1="29.88" y1="11.27" x2="44.83"
+                                            y2="11.27" xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-5" x1="29.53" y1="14.96" x2="45.16"
+                                            y2="14.96" xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-6" x1="13.62" y1="36.07" x2="35.46"
+                                            y2="36.07" xlink:href="#linear-gradient"></linearGradient>
+                                    </defs>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <path class="cls-1"
+                                                d="M48.12,2.44c-13.93,0-27.86.14-41.79,0-3.15,0-4,.82-4,4,.21,10.14.13,20.29,0,30.43,0,2.3.31,3.49,3.07,3.46s3.87-.73,3.46-3.51S10.26,30.87,6,29.25c-1.75-.66-.06-5.18,2.11-5.11,2.73.1,3.78-.72,3.45-3.49-.36-3.06.72-5.4,3.92-6.28,1.33-.37,1.88-.75,1.11-2.32-1.12-2.29-.73-4.54,1.86-5.62a3.59,3.59,0,0,1,4.92,1.75c1.4,2.66.26,4.49-2.62,6.09,6-.11,7.72,3,7.2,8.07C27.75,24.42,29.43,24,30.64,24c3.85,0,7.71,0,11.57,0,1.24,0,2.83-.23,2.87,1.66,0,1.34.86,3.31-.79,3.94C39,31.7,41.62,36.14,42,39s4.07.28,6.14,1.09v1.93c-3.37.2-7.3-.84-8.68,3.87H31.72c.58-.49.68-1.54.2-1.56q-6.23-.23-12.45-.06c-.61,0-.52,1-.28,1.62H11.47c-1-3.19-3.43-4.14-6.31-3.74-4,.55-4.7-1.22-4.63-4.81C.75,26.64.82,15.89.51,5.15.39,1.14,1.8.46,5.39.5c14.24.17,28.49,0,42.73,0ZM25.24,42h6.25c9,0,8.93,0,8.35-9.09-.13-2-.59-2.85-2.73-2.83-7.85.1-15.7,0-23.54.05-1.26,0-2.4-.12-2.85,1.72C8.88,39.36,10.84,42,18.52,42Zm-.12-13.62c5.28,0,10.57,0,15.85,0,.9,0,2.07.24,2.23-1.13s-.92-1.45-1.89-1.45H9.6c-1,0-2.11,0-2,1.35s1.25,1.22,2.18,1.22ZM13.45,23.26c1.28-.16,2-2.61,2.47-1.44,2.66,6,6.9-1.61,9.72,1.37.12-1.26.31-2.52.35-3.78s-.13-2.2-1.64-2.5-1.84.36-2.33,1.59c-1.38,3.46-3,3.18-4.66.1-.48-.86-.79-2.35-2.3-1.89a2.52,2.52,0,0,0-1.61,2.7C13.44,20.67,13.45,21.93,13.45,23.26ZM19.94,8.08A1.8,1.8,0,0,0,18.05,10a1.79,1.79,0,0,0,1.52,2A2,2,0,0,0,22,10.38C22.24,9.06,21.47,8.34,19.94,8.08Z">
+                                            </path>
+                                            <path class="cls-2" d="M29.69,18.6a26.27,26.27,0,0,1,15.11,0Z"></path>
+                                            <path class="cls-3" d="M44.78,7.48a24.43,24.43,0,0,1-15,0Z"></path>
+                                            <path class="cls-4" d="M44.83,11.75H29.9l0-1H44.76Z"></path>
+                                            <path class="cls-5"
+                                                d="M29.53,14.43A10.22,10.22,0,0,1,31.42,14c4.44,0,8.89,0,13.74,0C42.41,16.42,33.36,16.59,29.53,14.43Z">
+                                            </path>
+                                            <path class="cls-6"
+                                                d="M15.1,40c1.3-2.53,2.34-4.92-1.48-7.83,7.79,0,13.81,0,19.84,0,.93,0,2.47.46,1.45,1.51-2.22,2.27.16,4.09.55,6.3Zm10.41-1.72a30.72,30.72,0,0,0,3.84,0c1.14-.15,3,.89,2.8-1.84C32,34.52,31.28,33.92,29.5,34c-3.05.08-6.09,0-9.14,0-1.25,0-2.2.11-2,1.82.16,1.27-.16,2.61,1.86,2.48C22,38.18,23.75,38.27,25.51,38.27Z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+
+
+                            </div>
+
+                            <h4>Stand Designing & Fabrication</h4>
+
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>Booth Designing</li>
+                                    <li>Stall Fabrication</li>
+                                    <li>Technical Concepts</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="icon-services">
+                                <!-- <img src="img/man.png" alt=""> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 48.62 46.43">
+                                    <defs>
+                                        <linearGradient id="linear-gradient" x1="0.5" y1="23.21" x2="48.12" y2="23.21"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#fff"></stop>
+                                            <stop offset="1"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="linear-gradient-2" x1="29.69" y1="18.04" x2="44.8"
+                                            y2="18.04" xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-3" x1="29.77" y1="8.07" x2="44.78" y2="8.07"
+                                            xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-4" x1="29.88" y1="11.27" x2="44.83"
+                                            y2="11.27" xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-5" x1="29.53" y1="14.96" x2="45.16"
+                                            y2="14.96" xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-6" x1="13.62" y1="36.07" x2="35.46"
+                                            y2="36.07" xlink:href="#linear-gradient"></linearGradient>
+                                    </defs>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <path class="cls-1"
+                                                d="M48.12,2.44c-13.93,0-27.86.14-41.79,0-3.15,0-4,.82-4,4,.21,10.14.13,20.29,0,30.43,0,2.3.31,3.49,3.07,3.46s3.87-.73,3.46-3.51S10.26,30.87,6,29.25c-1.75-.66-.06-5.18,2.11-5.11,2.73.1,3.78-.72,3.45-3.49-.36-3.06.72-5.4,3.92-6.28,1.33-.37,1.88-.75,1.11-2.32-1.12-2.29-.73-4.54,1.86-5.62a3.59,3.59,0,0,1,4.92,1.75c1.4,2.66.26,4.49-2.62,6.09,6-.11,7.72,3,7.2,8.07C27.75,24.42,29.43,24,30.64,24c3.85,0,7.71,0,11.57,0,1.24,0,2.83-.23,2.87,1.66,0,1.34.86,3.31-.79,3.94C39,31.7,41.62,36.14,42,39s4.07.28,6.14,1.09v1.93c-3.37.2-7.3-.84-8.68,3.87H31.72c.58-.49.68-1.54.2-1.56q-6.23-.23-12.45-.06c-.61,0-.52,1-.28,1.62H11.47c-1-3.19-3.43-4.14-6.31-3.74-4,.55-4.7-1.22-4.63-4.81C.75,26.64.82,15.89.51,5.15.39,1.14,1.8.46,5.39.5c14.24.17,28.49,0,42.73,0ZM25.24,42h6.25c9,0,8.93,0,8.35-9.09-.13-2-.59-2.85-2.73-2.83-7.85.1-15.7,0-23.54.05-1.26,0-2.4-.12-2.85,1.72C8.88,39.36,10.84,42,18.52,42Zm-.12-13.62c5.28,0,10.57,0,15.85,0,.9,0,2.07.24,2.23-1.13s-.92-1.45-1.89-1.45H9.6c-1,0-2.11,0-2,1.35s1.25,1.22,2.18,1.22ZM13.45,23.26c1.28-.16,2-2.61,2.47-1.44,2.66,6,6.9-1.61,9.72,1.37.12-1.26.31-2.52.35-3.78s-.13-2.2-1.64-2.5-1.84.36-2.33,1.59c-1.38,3.46-3,3.18-4.66.1-.48-.86-.79-2.35-2.3-1.89a2.52,2.52,0,0,0-1.61,2.7C13.44,20.67,13.45,21.93,13.45,23.26ZM19.94,8.08A1.8,1.8,0,0,0,18.05,10a1.79,1.79,0,0,0,1.52,2A2,2,0,0,0,22,10.38C22.24,9.06,21.47,8.34,19.94,8.08Z">
+                                            </path>
+                                            <path class="cls-2" d="M29.69,18.6a26.27,26.27,0,0,1,15.11,0Z"></path>
+                                            <path class="cls-3" d="M44.78,7.48a24.43,24.43,0,0,1-15,0Z"></path>
+                                            <path class="cls-4" d="M44.83,11.75H29.9l0-1H44.76Z"></path>
+                                            <path class="cls-5"
+                                                d="M29.53,14.43A10.22,10.22,0,0,1,31.42,14c4.44,0,8.89,0,13.74,0C42.41,16.42,33.36,16.59,29.53,14.43Z">
+                                            </path>
+                                            <path class="cls-6"
+                                                d="M15.1,40c1.3-2.53,2.34-4.92-1.48-7.83,7.79,0,13.81,0,19.84,0,.93,0,2.47.46,1.45,1.51-2.22,2.27.16,4.09.55,6.3Zm10.41-1.72a30.72,30.72,0,0,0,3.84,0c1.14-.15,3,.89,2.8-1.84C32,34.52,31.28,33.92,29.5,34c-3.05.08-6.09,0-9.14,0-1.25,0-2.2.11-2,1.82.16,1.27-.16,2.61,1.86,2.48C22,38.18,23.75,38.27,25.51,38.27Z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+
+
+                            </div>
+
+                            <h4>Interior & Exterior Designing</h4>
+
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li> CO-DESIGNING CONCEPT</li>
+                                    <li> STRUCTURAL DESIGNING</li>
+                                    <li> SERVICES CONSULTING SERVICES</li>
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="icon-services">
+                                <!-- <img src="img/man.png" alt=""> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 48.62 46.43">
+                                    <defs>
+                                        <linearGradient id="linear-gradient" x1="0.5" y1="23.21" x2="48.12" y2="23.21"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#fff"></stop>
+                                            <stop offset="1"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="linear-gradient-2" x1="29.69" y1="18.04" x2="44.8"
+                                            y2="18.04" xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-3" x1="29.77" y1="8.07" x2="44.78" y2="8.07"
+                                            xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-4" x1="29.88" y1="11.27" x2="44.83"
+                                            y2="11.27" xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-5" x1="29.53" y1="14.96" x2="45.16"
+                                            y2="14.96" xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-6" x1="13.62" y1="36.07" x2="35.46"
+                                            y2="36.07" xlink:href="#linear-gradient"></linearGradient>
+                                    </defs>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <path class="cls-1"
+                                                d="M48.12,2.44c-13.93,0-27.86.14-41.79,0-3.15,0-4,.82-4,4,.21,10.14.13,20.29,0,30.43,0,2.3.31,3.49,3.07,3.46s3.87-.73,3.46-3.51S10.26,30.87,6,29.25c-1.75-.66-.06-5.18,2.11-5.11,2.73.1,3.78-.72,3.45-3.49-.36-3.06.72-5.4,3.92-6.28,1.33-.37,1.88-.75,1.11-2.32-1.12-2.29-.73-4.54,1.86-5.62a3.59,3.59,0,0,1,4.92,1.75c1.4,2.66.26,4.49-2.62,6.09,6-.11,7.72,3,7.2,8.07C27.75,24.42,29.43,24,30.64,24c3.85,0,7.71,0,11.57,0,1.24,0,2.83-.23,2.87,1.66,0,1.34.86,3.31-.79,3.94C39,31.7,41.62,36.14,42,39s4.07.28,6.14,1.09v1.93c-3.37.2-7.3-.84-8.68,3.87H31.72c.58-.49.68-1.54.2-1.56q-6.23-.23-12.45-.06c-.61,0-.52,1-.28,1.62H11.47c-1-3.19-3.43-4.14-6.31-3.74-4,.55-4.7-1.22-4.63-4.81C.75,26.64.82,15.89.51,5.15.39,1.14,1.8.46,5.39.5c14.24.17,28.49,0,42.73,0ZM25.24,42h6.25c9,0,8.93,0,8.35-9.09-.13-2-.59-2.85-2.73-2.83-7.85.1-15.7,0-23.54.05-1.26,0-2.4-.12-2.85,1.72C8.88,39.36,10.84,42,18.52,42Zm-.12-13.62c5.28,0,10.57,0,15.85,0,.9,0,2.07.24,2.23-1.13s-.92-1.45-1.89-1.45H9.6c-1,0-2.11,0-2,1.35s1.25,1.22,2.18,1.22ZM13.45,23.26c1.28-.16,2-2.61,2.47-1.44,2.66,6,6.9-1.61,9.72,1.37.12-1.26.31-2.52.35-3.78s-.13-2.2-1.64-2.5-1.84.36-2.33,1.59c-1.38,3.46-3,3.18-4.66.1-.48-.86-.79-2.35-2.3-1.89a2.52,2.52,0,0,0-1.61,2.7C13.44,20.67,13.45,21.93,13.45,23.26ZM19.94,8.08A1.8,1.8,0,0,0,18.05,10a1.79,1.79,0,0,0,1.52,2A2,2,0,0,0,22,10.38C22.24,9.06,21.47,8.34,19.94,8.08Z">
+                                            </path>
+                                            <path class="cls-2" d="M29.69,18.6a26.27,26.27,0,0,1,15.11,0Z"></path>
+                                            <path class="cls-3" d="M44.78,7.48a24.43,24.43,0,0,1-15,0Z"></path>
+                                            <path class="cls-4" d="M44.83,11.75H29.9l0-1H44.76Z"></path>
+                                            <path class="cls-5"
+                                                d="M29.53,14.43A10.22,10.22,0,0,1,31.42,14c4.44,0,8.89,0,13.74,0C42.41,16.42,33.36,16.59,29.53,14.43Z">
+                                            </path>
+                                            <path class="cls-6"
+                                                d="M15.1,40c1.3-2.53,2.34-4.92-1.48-7.83,7.79,0,13.81,0,19.84,0,.93,0,2.47.46,1.45,1.51-2.22,2.27.16,4.09.55,6.3Zm10.41-1.72a30.72,30.72,0,0,0,3.84,0c1.14-.15,3,.89,2.8-1.84C32,34.52,31.28,33.92,29.5,34c-3.05.08-6.09,0-9.14,0-1.25,0-2.2.11-2,1.82.16,1.27-.16,2.61,1.86,2.48C22,38.18,23.75,38.27,25.51,38.27Z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+
+
+                            </div>
+
+                            <h4>Events</h4>
+
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>CORPORATE EVENTS</li>
+                                    <li>B2B EVENTS SEMINARS</li>
+                                    <li>& CONFERENCE</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="icon-services">
+                                <!-- <img src="img/man.png" alt=""> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 48.62 46.43">
+                                    <defs>
+                                        <linearGradient id="linear-gradient" x1="0.5" y1="23.21" x2="48.12" y2="23.21"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#fff"></stop>
+                                            <stop offset="1"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="linear-gradient-2" x1="29.69" y1="18.04" x2="44.8"
+                                            y2="18.04" xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-3" x1="29.77" y1="8.07" x2="44.78" y2="8.07"
+                                            xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-4" x1="29.88" y1="11.27" x2="44.83"
+                                            y2="11.27" xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-5" x1="29.53" y1="14.96" x2="45.16"
+                                            y2="14.96" xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-6" x1="13.62" y1="36.07" x2="35.46"
+                                            y2="36.07" xlink:href="#linear-gradient"></linearGradient>
+                                    </defs>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <path class="cls-1"
+                                                d="M48.12,2.44c-13.93,0-27.86.14-41.79,0-3.15,0-4,.82-4,4,.21,10.14.13,20.29,0,30.43,0,2.3.31,3.49,3.07,3.46s3.87-.73,3.46-3.51S10.26,30.87,6,29.25c-1.75-.66-.06-5.18,2.11-5.11,2.73.1,3.78-.72,3.45-3.49-.36-3.06.72-5.4,3.92-6.28,1.33-.37,1.88-.75,1.11-2.32-1.12-2.29-.73-4.54,1.86-5.62a3.59,3.59,0,0,1,4.92,1.75c1.4,2.66.26,4.49-2.62,6.09,6-.11,7.72,3,7.2,8.07C27.75,24.42,29.43,24,30.64,24c3.85,0,7.71,0,11.57,0,1.24,0,2.83-.23,2.87,1.66,0,1.34.86,3.31-.79,3.94C39,31.7,41.62,36.14,42,39s4.07.28,6.14,1.09v1.93c-3.37.2-7.3-.84-8.68,3.87H31.72c.58-.49.68-1.54.2-1.56q-6.23-.23-12.45-.06c-.61,0-.52,1-.28,1.62H11.47c-1-3.19-3.43-4.14-6.31-3.74-4,.55-4.7-1.22-4.63-4.81C.75,26.64.82,15.89.51,5.15.39,1.14,1.8.46,5.39.5c14.24.17,28.49,0,42.73,0ZM25.24,42h6.25c9,0,8.93,0,8.35-9.09-.13-2-.59-2.85-2.73-2.83-7.85.1-15.7,0-23.54.05-1.26,0-2.4-.12-2.85,1.72C8.88,39.36,10.84,42,18.52,42Zm-.12-13.62c5.28,0,10.57,0,15.85,0,.9,0,2.07.24,2.23-1.13s-.92-1.45-1.89-1.45H9.6c-1,0-2.11,0-2,1.35s1.25,1.22,2.18,1.22ZM13.45,23.26c1.28-.16,2-2.61,2.47-1.44,2.66,6,6.9-1.61,9.72,1.37.12-1.26.31-2.52.35-3.78s-.13-2.2-1.64-2.5-1.84.36-2.33,1.59c-1.38,3.46-3,3.18-4.66.1-.48-.86-.79-2.35-2.3-1.89a2.52,2.52,0,0,0-1.61,2.7C13.44,20.67,13.45,21.93,13.45,23.26ZM19.94,8.08A1.8,1.8,0,0,0,18.05,10a1.79,1.79,0,0,0,1.52,2A2,2,0,0,0,22,10.38C22.24,9.06,21.47,8.34,19.94,8.08Z">
+                                            </path>
+                                            <path class="cls-2" d="M29.69,18.6a26.27,26.27,0,0,1,15.11,0Z"></path>
+                                            <path class="cls-3" d="M44.78,7.48a24.43,24.43,0,0,1-15,0Z"></path>
+                                            <path class="cls-4" d="M44.83,11.75H29.9l0-1H44.76Z"></path>
+                                            <path class="cls-5"
+                                                d="M29.53,14.43A10.22,10.22,0,0,1,31.42,14c4.44,0,8.89,0,13.74,0C42.41,16.42,33.36,16.59,29.53,14.43Z">
+                                            </path>
+                                            <path class="cls-6"
+                                                d="M15.1,40c1.3-2.53,2.34-4.92-1.48-7.83,7.79,0,13.81,0,19.84,0,.93,0,2.47.46,1.45,1.51-2.22,2.27.16,4.09.55,6.3Zm10.41-1.72a30.72,30.72,0,0,0,3.84,0c1.14-.15,3,.89,2.8-1.84C32,34.52,31.28,33.92,29.5,34c-3.05.08-6.09,0-9.14,0-1.25,0-2.2.11-2,1.82.16,1.27-.16,2.61,1.86,2.48C22,38.18,23.75,38.27,25.51,38.27Z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+
+
+                            </div>
+
+                            <h4>Branding & Promotion</h4>
+
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>PROMOTIONS MERCHANDISE</li>
+                                    <li>DIGITAL OOH - PROGRAMMATIC</li>
+                                    <li>HOARDINGS & BILLBOARDS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="icon-services">
+                                <!-- <img src="img/man.png" alt=""> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 48.62 46.43">
+                                    <defs>
+                                        <linearGradient id="linear-gradient" x1="0.5" y1="23.21" x2="48.12" y2="23.21"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#fff"></stop>
+                                            <stop offset="1"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="linear-gradient-2" x1="29.69" y1="18.04" x2="44.8"
+                                            y2="18.04" xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-3" x1="29.77" y1="8.07" x2="44.78" y2="8.07"
+                                            xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-4" x1="29.88" y1="11.27" x2="44.83"
+                                            y2="11.27" xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-5" x1="29.53" y1="14.96" x2="45.16"
+                                            y2="14.96" xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-6" x1="13.62" y1="36.07" x2="35.46"
+                                            y2="36.07" xlink:href="#linear-gradient"></linearGradient>
+                                    </defs>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <path class="cls-1"
+                                                d="M48.12,2.44c-13.93,0-27.86.14-41.79,0-3.15,0-4,.82-4,4,.21,10.14.13,20.29,0,30.43,0,2.3.31,3.49,3.07,3.46s3.87-.73,3.46-3.51S10.26,30.87,6,29.25c-1.75-.66-.06-5.18,2.11-5.11,2.73.1,3.78-.72,3.45-3.49-.36-3.06.72-5.4,3.92-6.28,1.33-.37,1.88-.75,1.11-2.32-1.12-2.29-.73-4.54,1.86-5.62a3.59,3.59,0,0,1,4.92,1.75c1.4,2.66.26,4.49-2.62,6.09,6-.11,7.72,3,7.2,8.07C27.75,24.42,29.43,24,30.64,24c3.85,0,7.71,0,11.57,0,1.24,0,2.83-.23,2.87,1.66,0,1.34.86,3.31-.79,3.94C39,31.7,41.62,36.14,42,39s4.07.28,6.14,1.09v1.93c-3.37.2-7.3-.84-8.68,3.87H31.72c.58-.49.68-1.54.2-1.56q-6.23-.23-12.45-.06c-.61,0-.52,1-.28,1.62H11.47c-1-3.19-3.43-4.14-6.31-3.74-4,.55-4.7-1.22-4.63-4.81C.75,26.64.82,15.89.51,5.15.39,1.14,1.8.46,5.39.5c14.24.17,28.49,0,42.73,0ZM25.24,42h6.25c9,0,8.93,0,8.35-9.09-.13-2-.59-2.85-2.73-2.83-7.85.1-15.7,0-23.54.05-1.26,0-2.4-.12-2.85,1.72C8.88,39.36,10.84,42,18.52,42Zm-.12-13.62c5.28,0,10.57,0,15.85,0,.9,0,2.07.24,2.23-1.13s-.92-1.45-1.89-1.45H9.6c-1,0-2.11,0-2,1.35s1.25,1.22,2.18,1.22ZM13.45,23.26c1.28-.16,2-2.61,2.47-1.44,2.66,6,6.9-1.61,9.72,1.37.12-1.26.31-2.52.35-3.78s-.13-2.2-1.64-2.5-1.84.36-2.33,1.59c-1.38,3.46-3,3.18-4.66.1-.48-.86-.79-2.35-2.3-1.89a2.52,2.52,0,0,0-1.61,2.7C13.44,20.67,13.45,21.93,13.45,23.26ZM19.94,8.08A1.8,1.8,0,0,0,18.05,10a1.79,1.79,0,0,0,1.52,2A2,2,0,0,0,22,10.38C22.24,9.06,21.47,8.34,19.94,8.08Z">
+                                            </path>
+                                            <path class="cls-2" d="M29.69,18.6a26.27,26.27,0,0,1,15.11,0Z"></path>
+                                            <path class="cls-3" d="M44.78,7.48a24.43,24.43,0,0,1-15,0Z"></path>
+                                            <path class="cls-4" d="M44.83,11.75H29.9l0-1H44.76Z"></path>
+                                            <path class="cls-5"
+                                                d="M29.53,14.43A10.22,10.22,0,0,1,31.42,14c4.44,0,8.89,0,13.74,0C42.41,16.42,33.36,16.59,29.53,14.43Z">
+                                            </path>
+                                            <path class="cls-6"
+                                                d="M15.1,40c1.3-2.53,2.34-4.92-1.48-7.83,7.79,0,13.81,0,19.84,0,.93,0,2.47.46,1.45,1.51-2.22,2.27.16,4.09.55,6.3Zm10.41-1.72a30.72,30.72,0,0,0,3.84,0c1.14-.15,3,.89,2.8-1.84C32,34.52,31.28,33.92,29.5,34c-3.05.08-6.09,0-9.14,0-1.25,0-2.2.11-2,1.82.16,1.27-.16,2.61,1.86,2.48C22,38.18,23.75,38.27,25.51,38.27Z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+
+
+                            </div>
+
+                            <h4>Digital Marketing</h4>
+
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>BRAND IDENTITY BRAND</li>
+                                    <li>STRATEGY CORPORATE DESIGNING</li>
+                                    <li>WEBSITE DEVLOPMENT</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="icon-services">
+                                <!-- <img src="img/man.png" alt=""> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 48.62 46.43">
+                                    <defs>
+                                        <linearGradient id="linear-gradient" x1="0.5" y1="23.21" x2="48.12" y2="23.21"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop offset="0" stop-color="#fff"></stop>
+                                            <stop offset="1"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="linear-gradient-2" x1="29.69" y1="18.04" x2="44.8"
+                                            y2="18.04" xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-3" x1="29.77" y1="8.07" x2="44.78" y2="8.07"
+                                            xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-4" x1="29.88" y1="11.27" x2="44.83"
+                                            y2="11.27" xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-5" x1="29.53" y1="14.96" x2="45.16"
+                                            y2="14.96" xlink:href="#linear-gradient"></linearGradient>
+                                        <linearGradient id="linear-gradient-6" x1="13.62" y1="36.07" x2="35.46"
+                                            y2="36.07" xlink:href="#linear-gradient"></linearGradient>
+                                    </defs>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <path class="cls-1"
+                                                d="M48.12,2.44c-13.93,0-27.86.14-41.79,0-3.15,0-4,.82-4,4,.21,10.14.13,20.29,0,30.43,0,2.3.31,3.49,3.07,3.46s3.87-.73,3.46-3.51S10.26,30.87,6,29.25c-1.75-.66-.06-5.18,2.11-5.11,2.73.1,3.78-.72,3.45-3.49-.36-3.06.72-5.4,3.92-6.28,1.33-.37,1.88-.75,1.11-2.32-1.12-2.29-.73-4.54,1.86-5.62a3.59,3.59,0,0,1,4.92,1.75c1.4,2.66.26,4.49-2.62,6.09,6-.11,7.72,3,7.2,8.07C27.75,24.42,29.43,24,30.64,24c3.85,0,7.71,0,11.57,0,1.24,0,2.83-.23,2.87,1.66,0,1.34.86,3.31-.79,3.94C39,31.7,41.62,36.14,42,39s4.07.28,6.14,1.09v1.93c-3.37.2-7.3-.84-8.68,3.87H31.72c.58-.49.68-1.54.2-1.56q-6.23-.23-12.45-.06c-.61,0-.52,1-.28,1.62H11.47c-1-3.19-3.43-4.14-6.31-3.74-4,.55-4.7-1.22-4.63-4.81C.75,26.64.82,15.89.51,5.15.39,1.14,1.8.46,5.39.5c14.24.17,28.49,0,42.73,0ZM25.24,42h6.25c9,0,8.93,0,8.35-9.09-.13-2-.59-2.85-2.73-2.83-7.85.1-15.7,0-23.54.05-1.26,0-2.4-.12-2.85,1.72C8.88,39.36,10.84,42,18.52,42Zm-.12-13.62c5.28,0,10.57,0,15.85,0,.9,0,2.07.24,2.23-1.13s-.92-1.45-1.89-1.45H9.6c-1,0-2.11,0-2,1.35s1.25,1.22,2.18,1.22ZM13.45,23.26c1.28-.16,2-2.61,2.47-1.44,2.66,6,6.9-1.61,9.72,1.37.12-1.26.31-2.52.35-3.78s-.13-2.2-1.64-2.5-1.84.36-2.33,1.59c-1.38,3.46-3,3.18-4.66.1-.48-.86-.79-2.35-2.3-1.89a2.52,2.52,0,0,0-1.61,2.7C13.44,20.67,13.45,21.93,13.45,23.26ZM19.94,8.08A1.8,1.8,0,0,0,18.05,10a1.79,1.79,0,0,0,1.52,2A2,2,0,0,0,22,10.38C22.24,9.06,21.47,8.34,19.94,8.08Z">
+                                            </path>
+                                            <path class="cls-2" d="M29.69,18.6a26.27,26.27,0,0,1,15.11,0Z"></path>
+                                            <path class="cls-3" d="M44.78,7.48a24.43,24.43,0,0,1-15,0Z"></path>
+                                            <path class="cls-4" d="M44.83,11.75H29.9l0-1H44.76Z"></path>
+                                            <path class="cls-5"
+                                                d="M29.53,14.43A10.22,10.22,0,0,1,31.42,14c4.44,0,8.89,0,13.74,0C42.41,16.42,33.36,16.59,29.53,14.43Z">
+                                            </path>
+                                            <path class="cls-6"
+                                                d="M15.1,40c1.3-2.53,2.34-4.92-1.48-7.83,7.79,0,13.81,0,19.84,0,.93,0,2.47.46,1.45,1.51-2.22,2.27.16,4.09.55,6.3Zm10.41-1.72a30.72,30.72,0,0,0,3.84,0c1.14-.15,3,.89,2.8-1.84C32,34.52,31.28,33.92,29.5,34c-3.05.08-6.09,0-9.14,0-1.25,0-2.2.11-2,1.82.16,1.27-.16,2.61,1.86,2.48C22,38.18,23.75,38.27,25.51,38.27Z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+
+
+                            </div>
+
+                            <h4>Creative Designing & Communication</h4>
+
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>BRAND IDENTITY BRAND</li>
+                                    <li> STRATEGY CORPORATE DESIGNING</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
+
             </div>
 
         </div>
     </section>
+    <!-- Exhibition  -->
+    <section id="project" class="project section padding_section">
+        <div class="container">
+            <h2 class="text-center">Showcase</h2>
+            <h2 class="text-center green">Our Recent Work</h2>
 
+            <div id="filter-buttons" class="padding_section filter-buttons">
+                <button type="button" class="active" data-filter="*">All</button>
+                <button type="button" data-filter=".three-d">3D</button>
+                <button type="button" data-filter=".exhibition">Exhibition</button>
+                <button type="button" data-filter=".company">Company</button>
+            </div>
+            <!-- Grid Items -->
+           
+ 
+            <div id="mix-container" class="padding_section">
+                <div class="mix three-d">
+                    <a data-fancybox="three-d" href="img/banner/01.png">
+                      <img src="img/banner/01.png" alt="">
+                    </a>
+                  </div>
+                  <div class="mix exhibition">
+                    <a data-fancybox="exhibition" href="img/banner/02.png">
+                      <img src="img/banner/02.png" alt="">
+                    </a>
+                  </div>
+                  <div class="mix three-d">
+                    <a data-fancybox="three-d" href="img/banner/07.png">
+                      <img src="img/banner/07.png" alt="">
+                    </a>
+                  </div>
+                  <div class="mix exhibition">
+                    <a data-fancybox="exhibition" href="img/banner/01.png">
+                      <img src="img/banner/01.png" alt="">
+                    </a>
+                  </div>
+                  <div class="mix company">
+                    <a data-fancybox="company" href="img/banner/01.png">
+                      <img src="img/banner/01.png" alt="">
+                    </a>
+                  </div>
+                  <div class="mix company">
+                    <a data-fancybox="company" href="img/banner/03.png">
+                      <img src="img/banner/03.png" alt="">
+                    </a>
+                  </div>
+                  <div class="mix three-d">
+                    <a data-fancybox="three-d" href="img/banner/08.png">
+                      <img src="img/banner/08.png" alt="">
+                    </a>
+                  </div>
+                  <div class="mix exhibition">
+                    <a data-fancybox="exhibition" href="img/banner/01.png">
+                      <img src="img/banner/01.png" alt="">
+                    </a>
+                  </div>
+                  <div class="mix three-d">
+                    <a data-fancybox="three-d" href="img/banner/01.png">
+                      <img src="img/banner/01.png" alt="">
+                    </a>
+                  </div>
+                  <div class="mix company">
+                    <a data-fancybox="company" href="img/banner/04.png">
+                      <img src="img/banner/04.png" alt="">
+                    </a>
+                  </div>
+                  <div class="mix three-d">
+                    <a data-fancybox="three-d" href="img/banner/09.png">
+                      <img src="img/banner/09.png" alt="">
+                    </a>
+                  </div>
+                  <div class="mix exhibition">
+                    <a data-fancybox="exhibition" href="img/banner/01.png">
+                      <img src="img/banner/01.png" alt="">
+                    </a>
+                  </div>
+                  <div class="mix three-d">
+                    <a data-fancybox="three-d" href="img/banner/01.png">
+                      <img src="img/banner/01.png" alt="">
+                    </a>
+                  </div>
+                  <div class="mix exhibition">
+                    <a data-fancybox="exhibition" href="img/banner/05.png">
+                      <img src="img/banner/05.png" alt="">
+                    </a>
+                  </div>
+                  <div class="mix three-d">
+                    <a data-fancybox="three-d" href="img/banner/10.png">
+                      <img src="img/banner/10.png" alt="">
+                    </a>
+                  </div>
+                  <div class="mix company">
+                    <a data-fancybox="company" href="img/banner/01.png">
+                      <img src="img/banner/01.png" alt="">
+                    </a>
+                  </div>
+                  <div class="mix three-d">
+                    <a data-fancybox="three-d" href="img/banner/01.png">
+                      <img src="img/banner/01.png" alt="">
+                    </a>
+                  </div>
+                  <div class="mix exhibition">
+                    <a data-fancybox="exhibition" href="img/banner/06.png">
+                      <img src="img/banner/06.png" alt="">
+                    </a>
+                  </div>
+                  <div class="mix three-d">
+                    <a data-fancybox="three-d" href="img/banner/11.png">
+                      <img src="img/banner/11.png" alt="">
+                    </a>
+                  </div>
+
+            </div>
+        </div>
+
+    </section>
     <!-- Client Slider -->
     <section class="client_slider padding_section section" id="client" data-aos="fade-up"
         data-aos-anchor-placement="center-center">
@@ -182,10 +631,7 @@
             </div>
         </div>
     </section>
-    <!-- Exhibition  -->
-    <section id="project">
 
-    </section>
     <section class="testimonial-section mt-5">
         <h1>Testimonails</h1>
         <h2>What Our Clients Say</h2>
@@ -194,18 +640,39 @@
             <div class="owl-carousel owl-theme" id="testimonial-carousel">
                 <div class="item">
                     <img src="img/man.png" alt="John Doe">
-                    <p>"Owl Carousel is an amazing slider for testimonials!"</p>
-                    <h4>- John Doe</h4>
+                    <p>It was not easy to design and build such an interior within a short period of time but 360
+                        CREATIVE DESIGNS team made this possible. It was really a good performance by the 360 CREATIVE
+                        DESIGNS Team. We will definitely refer 360 CREATIVE DESIGNS to other companies. if you ever need
+                        a business reference, you can count on me. I'm a big fan.</p>
+                    <h4>- Chirag Aggarwal</h4>
                 </div>
                 <div class="item">
                     <img src="img/man.png" alt="Sarah Smith">
-                    <p>"It is easy to use and fully responsive."</p>
-                    <h4>- Sarah Smith</h4>
+                    <p>For advertising, we looked for something creative. Brochures, Posters, Leaflets, Video
+                        presentation and Digital marketing were all needed. Maintaining our repute,
+                        360 CREATIVE DESIGNS rolled out all within and satisfied my boss. I believe only a corporate
+                        setup can understand and fulfill such needs and responsibilities. I will definitely patronize
+                        them again!</p>
+                    <h4>- Rajnish Jha</h4>
                 </div>
                 <div class="item">
                     <img src="img/man.png" alt="Alex Johnson">
-                    <p>"I highly recommend Owl Carousel for smooth slides."</p>
-                    <h4>- Alex Johnson</h4>
+                    <p>Stall designing was one big issue for us. Even bigger was its fabrication.
+                        Past experiences were not pleasant all and we were hesitant approaching Colour square. Boy! We
+                        were pleasantly surprised as we got what we had dreamed of! It was as if their artistes could
+                        read our minds! A big thank you!</p>
+                    <h4>- Aadarsh Jain</h4>
+                </div>
+                <div class="item">
+                    <img src="img/woman.png" alt="Alex Johnson">
+                    <p>360 CREATIVE DESIGNS helped us with the exhibition stand design solution very quickly within a
+                        short
+                        span of time. Especially when we talk about exhibitions,
+                        we always need to go for flexible and supportive company which 360 CREATIVE DESIGNS proved.www
+                        it and we
+                        are very happy with their services. We will obviously recommend to others as well.</p>
+
+                    <h4>- Janhvi Kapoor</h4>
                 </div>
             </div>
         </div>
@@ -301,14 +768,15 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
     <!-- Aos -->

@@ -33,7 +33,7 @@ body {
     top: 0;
     z-index: 999;
     width: 100%; */
-   
+
 }
 
 .navbar_bg .container .collapse .navbar-nav {
@@ -55,12 +55,16 @@ body {
     width: 20rem;
 }
 
+/* NavBar */
 .padding_section {
     padding-top: var(--padding_top_section);
 }
+
+/* About */
 .about_company {
-    scroll-margin-top: 18rem;
+    scroll-margin-top: 50rem;
 }
+
 .about_company .container h1 {
     font-size: var(--heading_font);
     text-align: center;
@@ -91,14 +95,82 @@ body {
     font-size: 1.8rem;
     text-align: justify;
 }
+
+/* Services */
 .services {
     scroll-margin-top: 18rem;
 }
+
 .services h2 {
     font-size: var(--heading_font);
 
 }
 
+.services .container .row .col-md-4 .card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2rem 1rem;
+    /* border-radius: 2rem; */
+}
+
+/* .services .container .row .col-md-4 .card .icon-services {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 0.5rem solid var(--gray_color);
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
+} */
+
+.services .container .row .col-md-4 .card {
+    position: relative;
+    /* Relative positioning ताकि pseudo-element सही से काम करे */
+}
+
+.services .container .row .col-md-4 .card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    /* Border की thickness */
+    background-color: transparent;
+    /* पहले border छुपा होगा */
+    transition: background-color 0.5s ease-in-out;
+}
+
+.services .container .row .col-md-4 .card:hover::after {
+    background-color: var(--green_color);
+    /* Hover करने पर border दिखेगा */
+}
+
+
+.services .container .row .col-md-4 .card svg {
+    width: 9rem;
+    fill: var(--blue_color);
+    transition: 0.3s;
+}
+
+.services .container .row .col-md-4 .card:hover svg {
+    transform: scale(1.1);
+}
+
+.services .container .row .col-md-4 .card h4 {
+    font-size: calc(var(--heading_font) - 0.5rem);
+    margin: 1.5rem 0rem;
+}
+
+.services .container .row .col-md-4 .card .card-body ul li {
+    font-size: 1.6rem;
+}
+
+/* Project */
+.project .container h2 {
+    font-size: var(--heading_font);
+}
+
+/* Client */
 .client_slider {
     scroll-margin-top: 18rem;
 }
@@ -229,6 +301,7 @@ body {
     display: flex;
     align-items: stretch;
 }
+
 .contact-info {
     background: #f9f9f9;
     padding: 2rem;
@@ -263,9 +336,11 @@ body {
     color: #555;
     text-decoration: none;
 }
+
 footer {
-  padding: var(--padding_top_section) 0rem 0rem 0rem;
+    padding: var(--padding_top_section) 0rem 0rem 0rem;
 }
+
 footer .container-fluid {
     background-color: var(--gray_color);
     padding: var(--padding_top_section) 0rem;
@@ -274,8 +349,9 @@ footer .container-fluid {
 footer .container-fluid .container .row .col-md-4 .logo img {
     width: 20rem;
 }
+
 footer .container-fluid .container .row .col-md-4 .logo p {
-    color:var(--white);
+    color: var(--white);
     margin-top: 10px
 }
 
@@ -317,6 +393,7 @@ footer .container-fluid .container .row .col-md-4 .logo p a {
     text-align: center;
     color: white;
 }
+
 .testimonial-section h1 {
     color: var(--green_color);
     position: relative;
@@ -335,6 +412,7 @@ footer .container-fluid .container .row .col-md-4 .logo p a {
     padding-bottom: var(--padding_top_section) - 2rem;
 
 }
+
 .testimonial-section .overlay {
     position: absolute;
     top: 0;
@@ -398,4 +476,37 @@ footer .container-fluid .container .row .col-md-4 .logo p a {
     margin-bottom: 15px;
     margin: auto;
     margin-bottom: 2rem;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.filter-buttons button {
+    background-color: none;
+    border: 0.1rem solid var(--green_color);
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+}
+.filter-buttons button.active {
+    background-color: var(--green_color);
+    color: var(--white);
+    /* border: 0.1rem solid var(--blue_color); */
+}
+
+#mix-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.mix {
+    width: calc(33.333% - 1rem);
+    text-align: center;
+    border: 0.1rem solid #ccc;
+    transition: all 0.5s ease;
+    position: relative;
 }

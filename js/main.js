@@ -31,7 +31,7 @@ $(document).ready(function () {
         var scrollPos = $(document).scrollTop();
 
         $(".section").each(function () {
-            var sectionTop = $(this).offset().top - 100;
+            var sectionTop = $(this).offset().top - 10;
             var sectionBottom = sectionTop + $(this).outerHeight();
 
             if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
@@ -83,5 +83,20 @@ $(document).ready(function () {
             $("#contactForm")[0].reset();
         }
     });
+    $('#filter-buttons button').on('click', function(){
+        $('#filter-buttons button').removeClass('active');
+        $(this).addClass('active');
+    });
 });
 
+var mixer = mixitup('#mix-container', {
+    animation: {
+        effects: 'fade scale(0.5)',
+        duration: 500, 
+    },
+    load: {
+        filter: 'all' 
+    }
+});
+
+console.log(typeof mixitup);
