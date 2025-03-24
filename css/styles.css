@@ -138,24 +138,29 @@ body {
 }
 
 .services .container .row .col-md-4 .card {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 2rem 1rem;
-    /* border-radius: 2rem; */
+    border: 0.5rem solid;
+    border-image: linear-gradient(120deg, var(--green_color), var(--blue_color));
+    border-image-slice: 1;
+    padding: 1.5rem;
+    min-height: 31.5rem;
+    position: relative;
+    margin-bottom: 1.5rem;
 }
 
-/* .services .container .row .col-md-4 .card .icon-services {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    border: 0.5rem solid var(--gray_color);
-    padding: 2rem;
-    text-align: center;
-    margin: auto;
-} */
+.services .container .row .col-md-4 .card .know_more {
+    position: absolute;
+    bottom: -1.6rem;
+    left: 50%;
+    transform: translate(-50%, 0rem);
+    border: none;
+    background-image: linear-gradient(to right, var(--green_color), var(--blue_color));
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+}
 
-.services .container .row .col-md-4 .card {
-    position: relative;
-    /* Relative positioning ताकि pseudo-element सही से काम करे */
+.services .container .row .col-md-4 .card .know_more a {
+    text-decoration: none;
+    color: var(--white);
 }
 
 .services .container .row .col-md-4 .card::after {
@@ -165,16 +170,11 @@ body {
     left: 0;
     width: 100%;
     height: 0.5rem;
-    /* Border की thickness */
     background-color: transparent;
-    /* पहले border छुपा होगा */
     transition: background-color 0.5s ease-in-out;
 }
 
-.services .container .row .col-md-4 .card:hover::after {
-    background-color: var(--green_color);
-    /* Hover करने पर border दिखेगा */
-}
+
 
 
 .services .container .row .col-md-4 .card svg {
@@ -197,6 +197,10 @@ body {
 }
 
 /* Project */
+.project {
+    padding: var(--padding_top_section) 0px;
+}
+
 .project .container h2 {
     font-size: var(--heading_font);
 }
@@ -446,9 +450,11 @@ footer .container-fluid .container .row .col-md-4 .logo p a {
 .social-icons a.linkedin {
     background: #007bb5;
 }
+
 .social-icons a.instagram {
     background-image: linear-gradient(to bottom, #f9ce34, #ee2a7b, #6228d7);
 }
+
 /* Testimonials */
 
 .testimonial-section {
@@ -558,7 +564,7 @@ footer .container-fluid .container .row .col-md-4 .logo p a {
 }
 
 .filter-buttons button.active {
-    background-color: var(--green_color);
+    background-image: linear-gradient(to right, var(--green_color), var(--blue_color));
     color: var(--white);
     /* border: 0.1rem solid var(--blue_color); */
 }
@@ -575,4 +581,131 @@ footer .container-fluid .container .row .col-md-4 .logo p a {
     border: 0.1rem solid #ccc;
     transition: all 0.5s ease;
     position: relative;
+}
+
+/* Fullscreen Carousel */
+.carousel-item {
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.carousel-caption {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+    z-index: 2;
+    color: white;
+    max-width: 80rem;
+    width: 100%;
+}
+
+.carousel-caption h1 {
+    font-size: calc(var(--heading_font) + 1rem);
+}
+
+.carousel-caption .button_slider {
+    margin-top: 5rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.carousel-caption .button_slider button {
+    background: transparent;
+    border: 0.2rem solid;
+    border-image: linear-gradient(120deg, var(--green_color), var(--blue_color));
+    border-image-slice: 1;
+    color: var(--white);
+    padding: 1rem 4rem;
+    transition: 0.5s ease-in-out;
+}
+
+.carousel-caption .button_slider button:hover {
+    background-image: linear-gradient(to right, var(--green_color), var(--blue_color));
+
+}
+
+.carousel-caption .button_slider button.what_we_do {
+    background-image: linear-gradient(to right, var(--green_color), var(--blue_color));
+
+}
+
+.top-right-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+}
+
+/* Portfolio */
+.portfolio_banner,
+.service_banner {
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.portfolio_banner {
+    background-image: url(../img/portfolio/Exhibition/Domestic-Stall/10.jpg);
+}
+.service_banner {
+    background-image: url(../img/portfolio/Architecture-Interiors/Corporate-Offices/1.jpg);
+}
+
+.portfolio_banner .layer,
+.service_banner .layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.61);
+    z-index: 99;
+}
+
+.portfolio_banner h1,
+.service_banner h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    z-index: 999;
+    font-size: calc(var(--heading_font) + 0.5rem);
+}
+
+/* Service Page */
+.services_content {
+    padding: var(--padding_top_section) 0px;
+    font-size: 1.8rem;
+}
+
+/* Portfolio Page */
+.portfolio_content .container .row .col-md-3 .filter-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.portfolio_content .container .row .col-md-3 .filter-buttons > button {
+ border: none;
+ background: transparent;
+ padding: 0;
+  font-size: 1.8rem;
 }
