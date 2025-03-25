@@ -669,6 +669,7 @@ footer .container-fluid .container .row .col-md-4 .logo p a {
     text-decoration: none;
     color: var(--white);
 }
+
 /* Portfolio */
 .portfolio_banner,
 .service_banner {
@@ -714,10 +715,57 @@ footer .container-fluid .container .row .col-md-4 .logo p a {
     font-size: 1.8rem;
 }
 
+.services_content .container>h1 {
+    text-align: center;
+    font-size: calc(var(--heading_font) + 1rem)
+}
+
+
+
+.services_content .container .row .content_colum ul {
+    list-style: none;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 0;
+}
+
+.services_content .container .row .content_colum ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.services_content .container .row .content_colum ul li::before {
+    content: "\f14a";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--green_color);
+    position: absolute;
+    left: 0;
+    top: 2px;
+    background: transparent;
+}
+
+.services_content .container .row .content_colum ul>li {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.services_content .container .row .content_colum h1 {
+    margin-bottom: 2rem;
+}
+.services_content .container .row .content_colum .top {
+    margin-bottom: 2rem;
+}
+.services_content .container .row .content_colum .bottom {
+    margin-top: 2rem;
+}
+
 /* Portfolio Page */
 .portfolio_content {
     padding: var(--padding_top_section) 0px;
 }
+
 .portfolio_content .container .row .col-md-3 .filter-buttons {
     display: flex;
     flex-direction: column;
