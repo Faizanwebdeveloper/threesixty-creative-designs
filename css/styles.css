@@ -47,6 +47,18 @@ body {
     font-weight: 700;
 }
 
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 .navbar_social_media .social-icons a i {
     font-size: 1rem;
 }
@@ -135,6 +147,10 @@ body {
 .services .container>p {
     color: var(--white);
     text-align: left;
+}
+
+.services .container .row {
+    padding: var(--padding_top_section) 0rem;
 }
 
 .services .container .row .col-md-4 .card {
@@ -707,6 +723,7 @@ footer .container-fluid .container .row .col-md-4 .logo p a {
     color: var(--white);
     z-index: 999;
     font-size: calc(var(--heading_font) + 0.5rem);
+
 }
 
 /* Service Page */
@@ -751,12 +768,15 @@ footer .container-fluid .container .row .col-md-4 .logo p a {
     margin-bottom: 1rem;
     text-transform: uppercase;
 }
+
 .services_content .container .row .content_colum h1 {
     margin-bottom: 2rem;
 }
+
 .services_content .container .row .content_colum .top {
     margin-bottom: 2rem;
 }
+
 .services_content .container .row .content_colum .bottom {
     margin-top: 2rem;
 }
@@ -777,4 +797,199 @@ footer .container-fluid .container .row .col-md-4 .logo p a {
     background: transparent;
     padding: 0;
     font-size: 1.8rem;
+}
+
+.mobile_show {
+    display: none;
+}
+.margin_section {
+    margin-top: var(--padding_top_section);
+}
+
+@media(max-width:991px) {
+    .navbar-toggler {
+        font-size: 2.5rem;
+        padding: 0;
+    }
+
+    .navbar_social_media {
+        display: none;
+    }
+
+    .mobile_show {
+        display: flex;
+        margin: 2rem 0rem;
+    }
+
+
+    .carousel-caption .button_slider button {
+        padding: 0.5rem 2rem;
+    }
+
+    .carousel-caption .button_slider {
+        margin-top: 2rem;
+    }
+
+
+    :root {
+
+        --para_font_size: 1.4rem;
+        --padding_top_section: 4rem;
+        --heading_font: 2.5rem;
+
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .carousel-caption .button_slider button {
+        padding: 0.3rem 1rem;
+    }
+
+    .about_company .container h1 {
+        text-align: center;
+    }
+
+    .about_company .container .about_child .about_content {
+        width: 100%;
+    }
+
+    .about_company .container .about_slide {
+        width: 100%;
+    }
+
+    .about_company .container .about_child .about_content .para {
+        font-size: 1.4rem;
+    }
+
+    .about_company .container .about_child {
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 0rem 2rem;
+    }
+
+    .services .container .row {
+        padding: calc(var(--padding_top_section) - 4rem) 0rem;
+    }
+
+    .services {
+        padding: var(--padding_top_section) 2rem;
+    }
+
+    .navbar_bg {
+        padding: 1.2rem 2rem;
+    }
+
+    .project {
+        padding: var(--padding_top_section) 2rem;
+    }
+
+    .mix {
+        width: calc(50% - 0.5rem);
+        text-align: center;
+        border: 0.1rem solid #ccc;
+        transition: all 0.5s ease;
+        position: relative;
+    }
+
+    .about_company .container .about_child {
+        gap: 2rem;
+    }
+
+    .testimonial-section .testimonial-content p {
+        font-size: 1.4rem;
+    }
+
+    .testimonial-section .testimonial-content h4 {
+        font-size: 1.6rem;
+    }
+
+    .testimonial-section .testimonial-content .owl-carousel .item {
+        padding: 0rem;
+    }
+
+    .navbar_bg .container .navbar-brand img {
+        width: 13rem;
+    }
+
+    .navbar-toggler {
+        font-size: 2rem;
+    }
+
+    .bussiness_widget .container .row .lets h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .bussiness_widget {
+        padding: var(--padding_top_section) 2rem;
+    }
+
+    .bussiness_widget .container .row .contact_button {
+        text-align: center;
+    }
+
+    .bussiness_widget .container .row .contact_button button {
+        padding: 1rem 2rem;
+    }
+
+    :root {
+
+        --para_font_size: 1.4rem;
+        --padding_top_section: 3.5rem;
+        --heading_font: 2.2rem;
+
+    }
+
+    .contact-form {
+        padding: var(--padding_top_section) 2rem;
+    }
+
+    footer .container-fluid .container .row .col-md-4 .logo {
+        text-align: center;
+    }
+
+    footer .container-fluid .container .row .col-md-4 .logo img {
+        width: 15rem;
+    }
+
+    footer .container-fluid .container .row .justify-content-end {
+        justify-content: center !important;
+        margin-top: 2rem;
+    }
+
+    .carousel-caption h1 {
+        font-size: calc(var(--heading_font) - 0.2rem);
+    }
+
+    .portfolio_content {
+        padding: 0rem 2rem;
+    }
+
+    .portfolio_banner h1,
+    .service_banner h1 {
+        font-size: var(--heading_font);
+        width: 25rem;
+        text-align: center;
+    }
+
+    .portfolio_banner,
+    .service_banner {
+        height: 20rem;
+    }
+
+    .services_content {
+        padding: var(--padding_top_section) 2rem;
+    }
+
+    .services_content .container .architecture_row,
+    .services_content .container .branding_row,
+    .services_content .container .creative_row {
+        flex-direction: column-reverse;
+    }
+
+    /* .portfolio_content .container .row .col-md-3 .filter-buttons {
+        flex-direction: row;
+    } */
 }
