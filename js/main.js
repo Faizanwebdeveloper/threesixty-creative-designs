@@ -95,8 +95,6 @@ var mixer = mixitup('#mix-container', {
         duration: 500, 
     },
     load: {
-        filter: 'all' 
+        filter: '.exhibition' 
     }
 });
-
-console.log(typeof mixitup);
