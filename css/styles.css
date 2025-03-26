@@ -98,6 +98,16 @@ body {
     text-align: center;
 }
 
+.about_company .container h1::after {
+    content: '';
+    background-image: linear-gradient(to right, var(--green_color), var(--blue_color));
+    width: 82%;
+    height: 0.3rem;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
 .green {
     color: var(--green_color) !important;
 }
@@ -160,7 +170,13 @@ body {
     padding: 1.5rem;
     min-height: 31.5rem;
     position: relative;
-    margin-bottom: 1.5rem;
+
+}
+
+.services .container .row .col-md-4 .card.one,
+.services .container .row .col-md-4 .card.two,
+.services .container .row .col-md-4 .card.three {
+    margin-bottom: 2.5rem;
 }
 
 .services .container .row .col-md-4 .card .know_more {
@@ -475,7 +491,7 @@ footer .container-fluid .container .row .col-md-4 .logo p a {
 
 .testimonial-section {
     position: relative;
-    background: url('../img/banner/03.png') no-repeat center center/cover;
+    background: url('../img/portfolio/Exhibition/International/2.jpg') no-repeat center center/cover;
 
     text-align: center;
     color: white;
@@ -506,7 +522,7 @@ footer .container-fluid .container .row .col-md-4 .logo p a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgb(0 0 0 / 77%)
 }
 
 .testimonial-section .testimonial-content {
@@ -802,6 +818,7 @@ footer .container-fluid .container .row .col-md-4 .logo p a {
 .mobile_show {
     display: none;
 }
+
 .margin_section {
     margin-top: var(--padding_top_section);
 }
@@ -842,7 +859,9 @@ footer .container-fluid .container .row .col-md-4 .logo p a {
 }
 
 @media(max-width:576px) {
-
+    .carousel-item {
+        height: 30rem;
+    }
     .carousel-caption .button_slider button {
         padding: 0.3rem 1rem;
     }
