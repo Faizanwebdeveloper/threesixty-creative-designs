@@ -822,7 +822,19 @@ footer .container-fluid .container .row .col-md-4 .logo p a {
 .margin_section {
     margin-top: var(--padding_top_section);
 }
-
+div:where(.swal2-container) h2:where(.swal2-title) {
+    font-size: 3rem !important;
+}
+div:where(.swal2-container) div:where(.swal2-html-container)   {
+    font-size: 2rem !important;
+}
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
+    font-size: 1.5rem !important;
+}
+div:where(.swal2-container).swal2-center>.swal2-popup {
+    max-width: 50rem !important;
+    width: 100% !important;
+}
 @media(max-width:991px) {
     .navbar-toggler {
         font-size: 2.5rem;

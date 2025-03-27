@@ -76,7 +76,7 @@ $(document).ready(function () {
         // If all fields are valid, send AJAX request
         if (isValid) {
             $.ajax({
-                url: "insert.php", // यहां अपने सर्वर का URL दें
+                url: "insert.php", 
                 type: "POST",
                 data: {
                     name: $("#name").val(),
@@ -84,11 +84,20 @@ $(document).ready(function () {
                     message: $("#message").val(),
                 },
                 success: function (response) {
-                    $(".success-message").fadeIn().delay(3000).fadeOut();
+                    Swal.fire({
+                        icon: "success",
+                        title: "Success!",
+                        text: "Your message has been sent successfully.",
+                    });
+
                     $("#contactForm")[0].reset();
                 },
                 error: function () {
-                    alert("Something went wrong! Please try again.");
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "Something went wrong! Please try again.",
+                    });
                 },
             });
         }
