@@ -170,14 +170,11 @@ body {
     padding: 1.5rem;
     min-height: 31.5rem;
     position: relative;
-
-}
-
-.services .container .row .col-md-4 .card.one,
-.services .container .row .col-md-4 .card.two,
-.services .container .row .col-md-4 .card.three {
     margin-bottom: 2.5rem;
+
 }
+
+
 
 .services .container .row .col-md-4 .card .know_more {
     position: absolute;

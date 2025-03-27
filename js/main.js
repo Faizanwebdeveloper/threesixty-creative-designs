@@ -6,7 +6,7 @@ $(document).ready(function () {
         autoplayTimeout: 2000,
         autoplayHoverPause: true,
         responsive: {
-            0: { items: 2 },
+            0: { items: 3 },
             576: { items: 3 },
             768: { items: 4 },
             992: { items: 8 }
