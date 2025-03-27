@@ -1,7 +1,4 @@
 $(document).ready(function () {
-    $("#clickMe").click(function () {
-        alert("Button Clicked!");
-    });
     $("#client_owl").owlCarousel({
         loop: true,
         margin: 15,
@@ -26,7 +23,6 @@ $(document).ready(function () {
         smartSpeed: 800,
         items: 1 // Ensures only one item is shown at a time
     });
-    AOS.init();
     $(window).on("scroll", function () {
         var scrollPos = $(document).scrollTop();
 
@@ -51,7 +47,7 @@ $(document).ready(function () {
     $("#contactForm").submit(function (e) {
         e.preventDefault();
         let isValid = true;
-
+    
         // Name validation
         if ($("#name").val().trim() === "") {
             $("#name").next(".error").show();
@@ -59,7 +55,7 @@ $(document).ready(function () {
         } else {
             $("#name").next(".error").hide();
         }
-
+    
         // Email validation
         let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test($("#email").val())) {
@@ -68,7 +64,7 @@ $(document).ready(function () {
         } else {
             $("#email").next(".error").hide();
         }
-
+    
         // Message validation
         if ($("#message").val().trim() === "") {
             $("#message").next(".error").show();
@@ -76,13 +72,28 @@ $(document).ready(function () {
         } else {
             $("#message").next(".error").hide();
         }
-
-        // If all fields are valid, show success message
+    
+        // If all fields are valid, send AJAX request
         if (isValid) {
-            $(".success-message").fadeIn().delay(3000).fadeOut();
-            $("#contactForm")[0].reset();
+            $.ajax({
+                url: "insert.php", // यहां अपने सर्वर का URL दें
+                type: "POST",
+                data: {
+                    name: $("#name").val(),
+                    email: $("#email").val(),
+                    message: $("#message").val(),
+                },
+                success: function (response) {
+                    $(".success-message").fadeIn().delay(3000).fadeOut();
+                    $("#contactForm")[0].reset();
+                },
+                error: function () {
+                    alert("Something went wrong! Please try again.");
+                },
+            });
         }
     });
+    
     $('#filter-buttons button').on('click', function(){
         $('#filter-buttons button').removeClass('active');
         $(this).addClass('active');
